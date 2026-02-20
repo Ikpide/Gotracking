@@ -1,32 +1,48 @@
-# Gotracking
+# Fake Tracking System Tutorial
 
 ## Overview
-Gotracking is a comprehensive tool designed for tracking various metrics and activities.
+This documentation provides a comprehensive guide on how to set up and use the Fake Tracking System.
+
+## Setup Instructions
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/Ikpide/Gotracking.git
+   ```
+2. **Install dependencies:**  
+   Navigate to the project directory and run:
+   ```bash
+   npm install
+   ```
+3. **Start the server:**  
+   ```bash
+   npm start
+   ```
+
+## API Endpoints
+- **GET /api/tracking**  
+  Retrieve all tracking entries.
+- **POST /api/tracking**  
+  Create a new tracking entry. Requires JSON body:
+   ```json
+   {
+     "itemId": "string",
+     "location": "string",
+     "status": "string"
+   }
+   ```
+- **GET /api/tracking/{id}**  
+  Retrieve a specific tracking entry by ID.
+- **DELETE /api/tracking/{id}**  
+  Delete a tracking entry by ID.
 
 ## Features
-- Easy to use interface
-- Real-time tracking
-- Data visualization options
+- **Real-time tracking updates:**  
+  The system provides live updates on item locations.
+- **User-friendly interface:**  
+  Easy-to-navigate web interface for managing tracking information.
 
-## Installation
-You can install Gotracking using pip:
-```bash
-pip install gotracking
-```
-
-## Usage
-Here's a simple example of how to use Gotracking:
-```python
-import gotracking
-
-tracker = gotracking.Tracker()
-tracker.start()
-# Your tracking code
-tracker.stop()
-```
-
-## Contributing
-We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for details.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+## How to Use the Web Interface
+1. Open the application in your web browser at `http://localhost:3000`.
+2. Use the dashboard to view current tracking entries.
+3. To add a new tracking entry, fill out the form and submit.
+4. Click on an entry to view more details or delete it.
