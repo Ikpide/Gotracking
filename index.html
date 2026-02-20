@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Interface</title>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <p id="datetime"></p>
+    <script>
+        const currentDateTime = new Date("2026-02-20T15:15:37Z").toUTCString();
+        document.getElementById('datetime').textContent = currentDateTime;
+    </script>
+</body>
+</html>
