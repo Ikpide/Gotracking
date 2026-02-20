@@ -1,0 +1,1 @@
+{\n  "name": "gotracking",\n  "version": "1.0.0",\n  "description": "A Node.js Express tracking system",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js"\n  },\n  "repository": {\n    "type": "git",\n    "url": "https://github.com/Ikpide/Gotracking.git"\n  },\n  "keywords": ["tracking", "express", "nodejs"],\n  "author": "Ikpide",\n  "license": "MIT"\n}
